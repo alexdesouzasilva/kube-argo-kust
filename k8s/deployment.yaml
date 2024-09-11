@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-argo-kust
+spec:
+  selector:
+    matchLabels:
+      app: kube-argo-kust
+  template:
+    metadata:
+      labels:
+        app: kube-argo-kust
+    spec:
+      containers:
+      - name: kube-argo-kust
+        image: alexsouzasilva/kube-argo-kust:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8082

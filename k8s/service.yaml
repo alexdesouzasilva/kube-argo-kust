@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kube-argo-kust
+spec:
+  selector:
+    app: kube-argo-kust
+  ports:
+  - port: 8082 # Porta exposta pelo Service (Acessível por outros serviços ou usuários)
+    targetPort: 8082 # Porta do contêiner onde a aplicação está rodando.

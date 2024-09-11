@@ -10,4 +10,4 @@ namespace: kubeapp
 images:
 - name: kube-argo-kust
   newName: alexsouzasilva/kube-argo-kust
-  newTag: e460a0f2a6ca76dcb76f594a87571bffcbe7f08e
+  newTag: a8cdcaabac2c53357f830c1ce0d7d2c5d8331dbf

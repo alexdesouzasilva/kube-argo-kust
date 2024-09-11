@@ -27,10 +27,12 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build and push
-      uses: docker/build-push-action@v6
+      uses: docker/build-push-action@v1.1.0
       with:
-        push: true
-        tags: alexsouzasilva/kube-argo-kust:latest
+        username: alexsouzasilva
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: alexsouzasilva/kube-argo-kust
+        tags: ${{ github.sha }}, latest
 
 
 

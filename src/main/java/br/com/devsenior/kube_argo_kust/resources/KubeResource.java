@@ -11,7 +11,7 @@ public class KubeResource {
 
     @GetMapping(value = "/health")
     public ResponseEntity<String> health() {
-        String health = "Hellow Everyone " + Instant.now();
+        String health = "Status Ok " + Instant.now();
         return ResponseEntity.ok(health);
     }
     

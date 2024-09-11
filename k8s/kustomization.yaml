@@ -9,5 +9,5 @@ namespace: kubeapp
 
 images:
 - name: kube-argo-kust
-  newName: alexsouzasilva/kube-argo-kust
+  newName: kube-argo-kust
   newTag: latest

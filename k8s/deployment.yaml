@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: kube-argo-kust
-        image: alexsouzasilva/kube-argo-kust:latest
+        image: kube-argo-kust
         resources:
           limits:
             memory: "128Mi"

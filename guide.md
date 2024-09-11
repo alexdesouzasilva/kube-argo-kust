@@ -16,3 +16,10 @@
 ### Criando repositório pelo CLI do github
 * gh repo create 
 * name: alexdesouzasilva/kube-argo-kust
+
+### Token Docker Hub
+Account Settings >> Personal access tokens >> New access token
+Token: <token....> (read, write, delete)
+
+### Repositório GitHub:
+Settings >> Secr... >> New Repository Sec... >> Name: DOCKER_PASSWORD

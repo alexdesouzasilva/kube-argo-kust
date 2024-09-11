@@ -51,7 +51,7 @@ jobs:
       run: |
         cd k8s
         kustomize edit set image kube-argo-kust=alexsouzasilva/kube-argo-kust:${{ github.sha }}
-        cat kustomize.yaml
+        cat kustomization.yaml
 
     - name: commit
       run: |
